@@ -1,71 +1,97 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Table</title>
     <style>
-        table, th, td {
-          border:1px solid black;
-          padding: 10px;
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            color: #333;
+        }
+        h1 {
+            color: #222;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            width: 95%;
+            max-width: 1000px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
         }
         th {
-          background-color: #add8e6;
+            background-color: #673ab7;
+            color: white;
         }
         td {
-          background-color: rgb(255, 255, 161);
+            background-color: #fffde7;
         }
-        </style>
-<head>
-    <title>Time Table</title>
+        tr:hover td {
+            background-color: #f1f8e9;
+        }
+        img {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-<body style="background-color:#F8F8E1;">
-<center>
-    <img src="/static/logo.png" height="100" width="540">
-</center>
+<body>
+
     <center>
-    <h1>Weekly Time Table: Sujith A(221224230278)</h1>
+        <img src="/static/logo.png" height="100" width="540">
+        <h1>Weekly Time Table: Sujith A (221224230278)</h1>
     </center>
-    <center>
-    <table background-color="lightblue">
+
+    <table>
         <thead>
-            <tr >
-                <th><h3>Day</h3></th>
-                <th> 9:00 - 10:00  </th>
-                <th> 10:00 - 11:00  </th>
-                <th> 11:00 - 12:00  </th>
-                <th> 12:00 - 1:00  </th>
-                <th> 1:00 - 2:00  </th>
-                <th> 2:00 - 3:00  </th>
-                <th> 3:00 - 4:00  </th>
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>12:00 - 1:00</th>
+                <th>1:00 - 2:00</th>
+                <th>2:00 - 3:00</th>
+                <th>3:00 - 4:00</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td> Monday </td>
+                <td>Monday</td>
                 <td>Free period</td>
                 <td>Maths</td>
                 <td>Data Science</td>
-                <td rowspan="5" style="text-align: center;">Lunch</td>
+                <td rowspan="5">Lunch</td>
                 <td>Free Period</td>
-                <td>Web Developement</td>
-                <td>Artificial intelligince</td>
+                <td>Web Development</td>
+                <td>Artificial Intelligence</td>
             </tr>
             <tr>
-                <td> Tuesday </td>
+                <td>Tuesday</td>
                 <td>DSA</td>
                 <td>Java</td>
                 <td>Data Science</td>
-                <td>Web Developement</td>
-                <td>Artificial intelligince</td>
+                <td>Web Development</td>
+                <td>Artificial Intelligence</td>
                 <td>Free period</td>
             </tr>
             <tr>
-                <td> Wednesday </td>
-                <td>Os</td>
+                <td>Wednesday</td>
+                <td>OS</td>
                 <td>Computer Network</td>
                 <td>Free Period</td>
                 <td>Java</td>
-                <td>Oops</td>
+                <td>OOPs</td>
                 <td>Free Period</td>
             </tr>
             <tr>
-                <td> Thursday </td>
+                <td>Thursday</td>
                 <td>DSA</td>
                 <td>Machine Learning</td>
                 <td>Digital Electronics</td>
@@ -74,81 +100,40 @@
                 <td>Python</td>
             </tr>
             <tr>
-                <td> Friday </td>
+                <td>Friday</td>
                 <td>Python</td>
-                <td>C programming</td>
+                <td>C Programming</td>
                 <td>Machine Learning</td>
                 <td>Digital Electronics</td>
                 <td>Data Science</td>
                 <td>Computer Network</td>
             </tr>
         </tbody>
-    </table></center>
+    </table>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>19AL109</td><td>Mathematics</td></tr>
+            <tr><td>19AI120</td><td>Data Science</td></tr>
+            <tr><td>19EE102</td><td>Digital Electronics</td></tr>
+            <tr><td>19CS129</td><td>Data Structures and Algorithms (DSA)</td></tr>
+            <tr><td>19CS109</td><td>Java Programming</td></tr>
+            <tr><td>19CS102</td><td>Web Development</td></tr>
+            <tr><td>19AL219</td><td>Operating Systems</td></tr>
+            <tr><td>19AL101</td><td>Object-Oriented Programming (OOP)</td></tr>
+            <tr><td>19CY119</td><td>Artificial Intelligence</td></tr>
+            <tr><td>19MA101</td><td>Mathematics II</td></tr>
+            <tr><td>19AL111</td><td>Computer Networks</td></tr>
+            <tr><td>19AI107</td><td>Machine Learning</td></tr>
+            <tr><td>19AL130</td><td>Python Programming</td></tr>
+        </tbody>
+    </table>
 
-    <center>
-        <table background-color="lightblue">
-            <thead>
-                <tr>
-                    <th> Subject Code </th>
-                    <th> Subject Name </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>19AL109</td>
-                    <td>Mathematics</td>
-                </tr>
-                <tr>
-                    <td>19AI120</td>
-                    <td>Data Science</td>
-                </tr>
-                <tr>
-                    <td>19EE102</td>
-                    <td>Digital Electronics</td>
-                </tr>
-                <tr>
-                    <td>19CS129</td>
-                    <td>Data Structures and Algorithms (DSA)</td>
-                </tr>
-                <tr>
-                    <td>19CS109</td>
-                    <td>Java Programming</td>
-                </tr>
-                <tr>
-                    <td>19CS102</td>
-                    <td>Web Development</td>
-                </tr>
-                <tr>
-                    <td>19AL219</td>
-                    <td>Operating Systems</td>
-                </tr>
-                <tr>
-                    <td>19AL101</td>
-                    <td>Object-Oriented Programming (OOP)</td>
-                </tr>
-                <tr>
-                    <td>19CY119</td>
-                    <td>Artificial intelligince</td>
-                </tr>
-                <tr>
-                    <td>19MA101</td>
-                    <td>Mathematics II</td>
-                </tr>
-                <tr>
-                    <td>19AL111</td>
-                    <td>Computer Networks</td>
-                </tr>
-                <tr>
-                    <td>19AI107</td>
-                    <td>Machine Learning</td>
-                </tr>
-                <tr>
-                    <td>19AL130</td>
-                    <td>Python Programming</td>
-                </tr>
-            </tbody>
-        </table>
-    </center>
 </body>
 </html>
